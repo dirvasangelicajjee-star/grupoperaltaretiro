@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grupo Peralta Retiro Seguro</title>
+
+<style>
+:root {
+  --green:#0f6b3a;
+  --gold:#c9a24d;
+  --dark:#0b1220;
+  --light:#f6f8f7;
+}
+
+*{box-sizing:border-box}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  background:var(--light);
+  color:#1f2937;
+  border:6px solid var(--gold);
+}
+
+/* HEADER */
+header{
+  background:linear-gradient(135deg,var(--green),var(--gold));
+  padding:24px;
+}
+
+.nav{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:16px;
+}
+
+.brand{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+}
+
+.brand img{
+  width:140px;
+  background:#fff;
+  padding:12px;
+  border-radius:20px;
+  border:3px solid var(--gold);
+  box-shadow:0 10px 24px rgba(0,0,0,.35);
+}
+
+.brand h1{
+  color:#fff;
+  margin:0;
+  font-size:22px;
+  text-align:center;
+}
+
+.nav a{
+  color:#fff;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  padding:56px 20px;
+  background:linear-gradient(135deg,var(--green),var(--gold));
+}
+
+.hero-card{
+  max-width:900px;
+  margin:auto;
+  background:#ffffffee;
+  border-radius:22px;
+  padding:30px;
+  border:2px solid var(--gold);
+}
+
+.badge{
+  background:var(--gold);
+  padding:6px 12px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:bold;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--green);
+  color:#fff;
+  padding:14px 22px;
+  border-radius:999px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:14px;
+}
+
+/* SECCIONES */
+.section{padding:42px 20px}
+.section h3{text-align:center;font-size:26px}
+
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+.card{
+  background:#fff;
+  border-radius:20px;
+  padding:24px;
+  border:2px solid var(--gold);
+}
+
+.trust ul{
+  list-style:none;
+  padding:0;
+  max-width:900px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:16px;
+}
+
+.trust li{
+  background:#f9fafb;
+  border-radius:18px;
+  padding:18px;
+  border:2px solid var(--gold);
+}
+
+.contact{
+  background:linear-gradient(135deg,var(--green),#0b8f55);
+  color:#fff;
+}
+
+.contact .box{
+  max-width:900px;
+  margin:auto;
+  padding:30px;
+  border-radius:22px;
+  border:2px solid var(--gold);
+  background:#ffffff1a;
+  text-align:center;
+}
+
+footer{
+  background:#0b1220;
+  color:#fff;
+  text-align:center;
+  padding:18px;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:#fff;
+  padding:14px 20px;
+  border-radius:999px;
+  text-decoration:none;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="nav">
+    <div class="brand">
+      <img src="logo.png.jpeg" alt="Peralta Luna Retiros de Pensiones">
+      <h1>Grupo Peralta Retiro Seguro</h1>
+    </div>
+    <nav>
+      <a href="#inicio">Inicio</a> ·
+      <a href="#servicios">Servicios</a> ·
+      <a href="#confianza">Confianza</a> ·
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+
+<section id="inicio" class="hero">
+  <div class="hero-card">
+    <span class="badge">Especialistas en Pensión IMSS</span>
+    <h2>Tu retiro seguro, claro y bien planeado</h2>
+    <p>Asesoría integral en pensiones IMSS, Modalidad 40, semanas cotizadas y trámites.</p>
+    <a class="btn" href="#contacto">Quiero asesoría</a>
+  </div>
+</section>
+
+<section id="servicios" class="section">
+  <h3>Nuestros Servicios</h3>
+  <div class="cards">
+    <div class="card">Pensión IMSS</div>
+    <div class="card">Modalidad 40</div>
+    <div class="card">Trámites</div>
+    <div class="card">Prevención</div>
+  </div>
+</section>
+
+<section id="confianza" class="section trust">
+  <h3>¿Por qué elegirnos?</h3>
+  <ul>
+    <li>Atención personalizada</li>
+    <li>Experiencia en IMSS</li>
+    <li>Lenguaje claro</li>
+    <li>Seguimiento continuo</li>
+  </ul>
+</section>
+
+<section id="contacto" class="section contact">
+  <div class="box">
+    <h3>Contacto</h3>
+    <p><strong>Lic. David Peralta Luna</strong></p>
+    <p>📞 55 1377 0607</p>
+    <p style="font-size:13px">
+      Aviso: Grupo Peralta Retiro Seguro brinda asesoría y acompañamiento profesional en trámites ante el IMSS.
+      La resolución final corresponde exclusivamente a la autoridad competente.
+    </p>
+  </div>
+</section>
+
+<footer>
+  © Grupo Peralta Retiro Seguro
+</footer>
+
+<a class="whatsapp" href="https://wa.me/5215513770607">WhatsApp</a>
+
+</body>
+</html>
